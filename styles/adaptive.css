@@ -1,0 +1,49 @@
+@media all and (max-width: 1024px) and (max-height: 768px) {
+
+}
+
+@media all and (max-width: 768px) and (max-height: 1024px) {
+    .one_group,
+    .two_group,
+    .three_group {
+        display: wrap;
+    }
+
+    .firstgr {
+        width: 100%;
+        padding-left: 25%;
+
+
+    }
+
+    .secondgr {
+        position: relative;
+        left: -25%;
+        top: 5vw;
+    }
+
+    .four_group {
+        top: 60vw;
+    }
+
+    .five_group {
+        top: 35vw;
+
+    }
+
+    .figure_groups {
+        margin-bottom: 50vw;
+    }
+
+}
+
+@media all and (max-width: 416px) and (max-height: 896px) {
+
+    .triangleb_hook {
+        transform: translate(9.9vw, -120%);
+    }
+
+    .squaremb_hook {
+        transform: translate(3.5vw, -120%);
+    }
+}

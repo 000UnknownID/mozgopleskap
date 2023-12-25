@@ -1,0 +1,591 @@
+@font-face {
+    font-family: "TTCommons-Bold";
+    src: url(../fonts/TTCommons-Bold.ttf);
+    font-weight: italic;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "TTCommons-Regular";
+    src: url(../fonts/TTCommons-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+.content {
+    flex: 1 1 auto;
+}
+
+p {
+    font-family: "TTCommons-Regular";
+    font-weight: 400;
+}
+
+/* PIPES */
+
+.pipe {
+    position: relative;
+    overflow: hidden;
+}
+
+.pipe__img {
+    position: relative;
+    margin-top: 3vw;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+}
+
+.figures {
+    position: absolute;
+    height: auto;
+    width: auto;
+}
+
+.top {
+    top: 1.5vw;
+    left: 0;
+    width: 90%;
+    animation: move_horizontal 5s ease-in-out infinite;
+}
+
+.left_double {
+    top: 14.5vw;
+    left: 33.7vw;
+    width: 6%;
+    animation: move_vertical 2s ease-in-out infinite;
+}
+
+.left_left {
+    top: 26.5vw;
+    left: 0;
+    width: 24%;
+    animation: move_horizontal_left 1.5s ease-in-out infinite;
+}
+
+.left_down {
+    top: 36.5vw;
+    left: 27.5vw;
+    width: 15%;
+    animation: move_horizontal_down 1s ease-in-out infinite;
+}
+
+.right_up {
+    top: 12vw;
+    left: 82vw;
+    width: 10%;
+    animation: move_vertical_right 1s ease-in-out infinite;
+}
+
+.right_down {
+    top: 88%;
+    left: 75%;
+    width: 14%;
+    animation: move_horizontal_right 2s ease-in-out infinite;
+    z-index: 3;
+}
+
+.sales {
+    position: absolute;
+    color: white;
+    font-size: 4.7vw;
+    top: 51%;
+    left: 51%;
+    rotate: 25deg;
+    z-index: 3;
+    animation: 1.5s ease 0s infinite beat;
+}
+
+.splash_sales {
+    position: absolute;
+    top: 11vw;
+    left: 40vw;
+    z-index: 1;
+    width: 40%;
+}
+
+/* LETTERS & SYMBOLS */
+
+.figure_groups {
+    margin-top: 10vw;
+}
+
+.images {
+    position: relative;
+    height: 35vw;
+}
+
+.group {
+    position: absolute;
+    width: 25%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.group:hover {
+    transform: scale(1.2);
+}
+
+
+.one_group {
+    margin-left: 7vw;
+    z-index: 1;
+}
+
+.two_group {
+    top: 1vw;
+}
+
+.three_group {
+    margin-left: 25%;
+    top: -5vw;
+    transition: transform 0.5s ease-in-out;
+}
+
+.three_group:hover {
+    transform: scale(0.92, 0.95);
+}
+
+.four_group {
+    top: 24vw;
+    left: 40%;
+    width: 55%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.four_group:hover {
+    transform: scale(0.92, 0.95);
+}
+
+.five_group {
+    top: -1vh;
+    left: 58%;
+    width: 35%;
+}
+
+/* DRYER */
+
+.dryer {
+    margin-top: 9vw;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.line {
+    width: 100%;
+}
+
+.shape {
+    position: absolute;
+}
+
+/* TRG FIXED */
+
+.triangle_fixed {
+    left: -5%;
+    top: -33%;
+    max-width: 100%;
+    width: 27vw;
+}
+
+/* SQR BOUNCE */
+
+.squareb_block {
+    position: absolute;
+    left: 18vw;
+    top: 6vw;
+}
+
+
+.squareb_hook {
+    transform: translate(6.4vw, -230%);
+    max-width: 100%;
+    width: 2vw;
+}
+
+.square_bounce {
+    max-width: 100%;
+    width: 6vw;
+    transform-origin: top center;
+    animation: wiggle 2s infinite;
+}
+
+
+
+/* TRG BOUNCE */
+
+
+.triangleb_block {
+    position: absolute;
+    left: 23vw;
+    top: 8vw;
+}
+
+
+.triangleb_hook {
+    transform: translate(9.5vw, -115.5%);
+    width: 4vw;
+
+}
+
+.triangle_bounce {
+    width: 9vw;
+    transform-origin: top center;
+    animation: wiggle 2s infinite;
+
+}
+
+
+/* CIRCLE BOUNCE */
+
+
+.circleb_block {
+    position: absolute;
+    left: 42.5vw;
+    top: 7.1vw;
+}
+
+.circleb_block:hover {
+    transform-origin: top center;
+    animation: wiggle 2s infinite;
+}
+
+.circleb_hook {
+    transform: translate(3.3vw, -115%);
+    width: 4vw;
+}
+
+.circle_bounce {
+    width: 9vw;
+}
+
+/* SQR2 BOUNCE */
+
+
+.squaretb_block {
+    position: absolute;
+    left: 55vw;
+    top: 6.7vw;
+
+}
+
+
+.squaretb_hook {
+    transform: translate(9vw, -200%);
+    width: 3vw;
+}
+
+.squaret_bounce {
+    width: 8vw;
+    transform-origin: top center;
+    animation: wiggle 2s infinite;
+}
+
+/* SQR mini BOUNCE */
+
+
+.squaremb_block {
+    position: absolute;
+    left: 70%;
+    top: 70%;
+
+    width: 13vw;
+    height: 13vw;
+}
+
+
+.squaremb_hook {
+    transform: translate(2.9vw, -120%);
+    width: 20%;
+}
+
+.squarem_bounce {
+    width: 40%;
+    transform-origin: top center;
+    animation: wiggle 2s infinite;
+
+}
+
+
+/* CIRCLE FIXED */
+
+.circle_fixed {
+    left: 80%;
+    top: 70%;
+    max-width: 100%;
+    width: 13vw;
+}
+
+/* LOGO */
+
+.liner {
+    margin-top: 16vw;
+    margin-bottom: 5vw;
+    max-height: 100%;
+    height: 2vw;
+    background-color: black;
+    padding: 1vw;
+}
+
+.logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    overflow-x: hidden;
+
+}
+
+.logo {
+    width: 10vw;
+    animation: text 4s infinite linear;
+}
+
+.button_arrows {
+    position: relative;
+}
+
+.button {
+    margin-bottom: 12vw;
+    margin-left: 12vw;
+    width: 9vw;
+
+    position: relative;
+    z-index: 10;
+}
+
+.button:hover~.falling .fshapes .shapef {
+    animation-play-state: running;
+}
+
+
+.arrow_one {
+    position: absolute;
+    width: 19vw;
+    top: -24vw;
+    left: 24vw;
+}
+
+.arrow_two {
+    position: absolute;
+    width: 25vw;
+    top: -19vw;
+    left: 16vw;
+}
+
+.arrow_three {
+    position: absolute;
+    width: 15vw;
+    top: -10vw;
+    left: 5vw;
+}
+
+.promotion {
+    position: absolute;
+    color: white;
+    font-size: 4.7vw;
+    top: 40vw;
+    left: 14vw;
+    rotate: -25deg;
+    z-index: 3;
+    animation: 1.5s ease 0s infinite beat;
+}
+
+.splash_promotion {
+    position: absolute;
+    top: 30vw;
+    left: 0vw;
+    z-index: 1;
+    width: 40%;
+    rotate: -45deg;
+}
+
+/* FALLING LINES */
+
+.falling {
+    top: 5vw;
+    position: relative;
+
+}
+
+.fline {
+    position: absolute;
+    width: 35vw;
+
+}
+
+.lline {
+    transform: rotateX(180deg);
+    margin-top: 15vw;
+}
+
+.rline {
+    right: 0;
+}
+
+.fshapes {
+    overflow-x: hidden;
+}
+
+.shapef {
+    position: absolute;
+    max-width: 100%;
+    min-height: 100%;
+}
+
+.shape_animated_left {
+    animation: shape_fall_left 2s ease-in-out forwards,
+        fall 2s ease-in-out forwards 1s, disappear 1s ease-in-out forwards 3s;
+    animation-play-state: paused;
+}
+
+.shape_animated_right {
+    animation: shape_fall_right 2s ease-in-out forwards,
+        fall 2s ease-in-out forwards 1s, disappear 1s ease-in-out forwards 3s;
+    animation-play-state: paused;
+}
+
+.right-circle {
+    right: 1vw;
+    bottom: 0.5vw;
+    --fall_start: 0.5vw;
+    --distance: -38vw;
+    --fall_distance: -11vw;
+
+    width: 13vw;
+    height: 13vw;
+}
+
+.right-square {
+    right: 13vw;
+    bottom: -4vw;
+    --fall_start: -4vw;
+    --distance: -27vw;
+    --fall_distance: -19vw;
+
+    width: 9vw;
+    height: 9vw;
+}
+
+.right-squarem {
+    right: 22vw;
+    bottom: -7vw;
+    --fall_start: -7vw;
+    --distance: -20vw;
+    --fall_distance: -24vw;
+
+    width: 5vw;
+    height: 5vw;
+}
+
+.right-circlem {
+    right: 30vw;
+    bottom: -9vw;
+    --fall_start: -9vw;
+    --distance: -13vw;
+    --fall_distance: -28vw;
+
+    width: 4vw;
+    height: 4vw;
+}
+
+
+.left-square {
+    left: 1vw;
+    bottom: -15vw;
+    --fall_start: -15vw;
+    --distance: 33vw;
+    --fall_distance: -24vw;
+
+    width: 15vw;
+    height: 15vw;
+}
+
+.left-triangle {
+    left: 17vw;
+    bottom: -19vw;
+    --fall_start: -19vw;
+    --distance: 23vw;
+    --fall_distance: -32.5vw;
+
+    width: 8vw;
+    height: 8vw;
+}
+
+.left-squarem {
+    left: 27vw;
+    bottom: -22vw;
+    --fall_start: -22vw;
+    --distance: 12vw;
+    --fall_distance: -37vw;
+
+    width: 5vw;
+    height: 5vw;
+}
+
+
+/* WASHING MACHINE */
+
+.washing:hover {
+    animation: rotate_dryer_right 5s ease-in-out infinite forwards;
+}
+
+.first_crc {
+    top: 70vw;
+    left: 5vw;
+    rotate: -90deg;
+
+    width: 28vw;
+    height: 28vw;
+}
+
+.first_crc:hover {
+    animation: rotate_dryer_left 5s ease-in-out infinite forwards;
+}
+
+.second_crc {
+    top: 28vw;
+    right: 5vw;
+
+    width: 30vw;
+    height: 30vw;
+}
+
+.third_crc {
+    top: 80vw;
+    right: 5vw;
+
+    width: 28vw;
+    height: 28vw;
+}
+
+.fourth_crc {
+    top: 50vw;
+    left: 33vw;
+
+    width: 40vw;
+    height: 40vw;
+}
+
+.fourth_crc:hover {
+    animation: rotate_dryer_left 5s ease-in-out infinite forwards;
+}
+
+
+/* FOOTER */
+
+footer {
+    height: 100%;
+    margin-top: 125vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 5vw;
+    padding: 10px;
+    color: white;
+    background-color: black;
+}
